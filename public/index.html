@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work in Progress</title>
+  <link rel="stylesheet" href="style.css">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous"
+  >
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h1 class="display-4 fw-bold text-primary">🏋️ Work in Progress</h1>
+      <p class="text-muted">Upload a photo and let AI suggest a workout plan</p>
+    </div>
+
+    <!-- Card -->
+    <div class="card shadow-lg p-4 mx-auto" style="max-width: 500px;">
+      <form id="upload-form" class="mb-3">
+        <div class="mb-3">
+          <label for="image-input" class="form-label">Choose an image</label>
+          <input 
+            class="form-control" 
+            type="file" 
+            id="image-input" 
+            accept="image/*"
+          >
+        </div>
+
+        <!-- Preview -->
+        <div class="text-center mb-3">
+          <img 
+            id="preview" 
+            class="img-fluid rounded shadow-sm" 
+            style="max-width: 100%; display: none;"
+          >
+        </div>
+
+        <!-- Button -->
+        <div class="d-grid">
+          <button 
+            id="analyse-btn" 
+            class="btn btn-primary btn-lg" 
+            type="submit"
+          >
+            Analyse
+          </button>
+        </div>
+      </form>
+
+      <!-- AI Response -->
+      <div class="mt-4">
+        <h5 class="text-secondary">AI Response:</h5>
+        <p id="message" class="fw-bold">
+          Upload an image to get started
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
