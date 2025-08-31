@@ -2,6 +2,7 @@
 // When the user choose a photo.jpg, the browser gives you a file object
 // For example: {name: "photo.jpg", size: 123456}
 
+// This is a test
 document.getElementById("image-input").addEventListener("change", (event) => {
   const file = event.target.files[0];
   if (!file) return;
