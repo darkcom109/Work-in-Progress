@@ -1,14 +1,13 @@
 # Work-in-Progress
-A basic AI fitness app where users can provide an image of themselves and an AI will provide a diet and workout plan. Made using the OpenAI Vision model for image analyses. This project was made on the 03/03/25 during the HackLondon2025 Hackathon.
-
-# Work-in-Progress
+This project was made on the 03/03/25 during the HackLondon2025 Hackathon and was my introduction to JavaScript, HTML and CSS.
 
 ## Features
 - ✅ OpenAI can analyse and provide a diet/workout plan according to your muscle definition
 - ⚡ Users can provide other people's body to achieve similar levels of muscularity
 
 ## Tech Stack
-- Node.js, Express.js, React.js and MongoDB + Cloudinary
-- Socket.io for real-time chat
+- Node.js, Express.js, HTML, CSS
+- OpenAI Vision Model
+
 
 
